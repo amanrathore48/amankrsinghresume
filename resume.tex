@@ -1,0 +1,113 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{booktabs}
+
+% Geometry
+\geometry{top=0.75in, bottom=0.75in, left=0.75in, right=0.75in}
+
+% Custom colors
+\definecolor{linkcolor}{HTML}{1A73E8}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=linkcolor,
+    linkcolor=linkcolor,
+    filecolor=linkcolor,
+    citecolor=linkcolor
+}
+
+% Section formatting (adjusted for better spacing)
+\titleformat{\section}{\large\bfseries\sffamily}{}{0em}{\color{black}\titlerule[0.8pt]\vspace{6pt}} % Horizontal rule and spacing
+\titlespacing{\section}{0pt}{6pt}{6pt} % Adjusted spacing before and after sections
+
+% Custom commands
+\newcommand{\entry}[2]{\textbf{#1}\hfill #2}
+\newcommand{\subentry}[2]{\textit{#1}\hfill #2}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE \textbf{Aman Kumar Singh}} \\
+    \vspace{4pt}
+    \href{mailto:amankrsingh227@gmail.com}{amankrsingh227@gmail.com} \textbullet{}
+    +91 9266655548 \textbullet{} New Delhi, India \\
+    \vspace{4pt}
+    \href{https://amankrsingh.vercel.app/}{Portfolio} \textbullet{}
+    \href{https://github.com/amanrathore48}{GitHub} \textbullet{}
+    \href{https://linkedin.com/in/aman-kr-singh}{Linkedin}
+\end{center}
+
+% Education
+\section*{Education}
+\entry{B.Tech. in Mechatronics}{Delhi Institute of Tool Engineering \textbullet{} 2019 -- 2023}
+\begin{itemize}[leftmargin=0.5cm]
+    \item CGPA: 8.49/10
+\end{itemize}
+
+\entry{Class XII (CBSE)}{Lions Public School \textbullet{} 2018 -- 2019}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Percentage: 84.6%
+\end{itemize}
+\vspace{2pt}
+
+% Projects
+\section*{Projects}
+\entry{Ecomm: E-commerce Website}{\href{https://ecomm-eight-pearl.vercel.app/}{Live} \textbullet{} \href{https://github.com/amanrathore48/Ecomm.}{GitHub}}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Built with Next.js, Tailwind CSS, MongoDB, and NextAuth.
+    \item Implemented advanced filtering, search, and secure checkout processes.
+\end{itemize}
+
+\entry{InfoSynth: Information Synthesis Web App}{\href{https://infosynthai.netlify.app/}{Live} \textbullet{} \href{https://github.com/amanrathore48/InfoSynth}{GitHub}}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Utilized React and ChatGPT API to summarize articles efficiently.
+    \item Designed with Tailwind CSS for a sleek, modern interface.
+\end{itemize}
+
+\entry{Minicraft: Light Game}{\href{https://github.com/amanrathore48/Minicraft}{GitHub}}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Built with React.js and Three.js to simulate Minecraft-like gameplay.
+\end{itemize}
+\vspace{2pt}
+
+% Professional Experience
+\section*{Professional Experience}
+\entry{Full Stack Developer | Digital India Corporation}{Aug 2023 -- Present}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Spearheaded the development of the new ApiSetu admin portal, integrating organization login and verification.
+    \item Implemented robust subdomain authentication mechanisms, enhancing security.
+    \item Optimized data retrieval using SWR and server-side rendering for improved performance.
+\end{itemize}
+
+\entry{Full Stack Developer (Intern) | DigiLocker}{ Dec 2022 -- Mar 2023}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Executed CRUD operations to ensure seamless data manipulation and database interaction.
+    \item Fortified platform security by implementing NextAuth for authentication.
+    \item Integrated MongoDB and MySQL databases with Prisma for streamlined data management.
+\end{itemize}
+
+\entry{MERN Stack Developer | Creatospace}{Jun 2022 -- Dec 2022}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Designed and developed a user-friendly product interface in a startup environment.
+    \item Engineered a referral system and integrated a payment gateway, enhancing functionality.
+    \item Adopted MVC-based code architecture for maintainability.
+\end{itemize}
+\vspace{2pt}
+
+% Skills
+\section*{Skills}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=0.5cm]
+    \item \textbf{Languages:} C++, JavaScript, Python, TypeScript
+    \item \textbf{Frameworks:} React, Next.js, NestJS, Express
+    \item \textbf{Tools:} Docker, AWS, Git/GitHub, Postman
+    \item \textbf{Databases:} MongoDB, MySQL, Prisma
+\end{itemize}
+\end{multicols}
+
+\end{document}
